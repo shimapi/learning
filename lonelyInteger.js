@@ -33,8 +33,12 @@ function readLine() {
 
 function lonelyinteger(a) {
     // Write your code here
+    let result = a.reduce((acc, curr) => acc ^ curr);
+    return result;
+
 
 }
+lonelyinteger([1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6])
 
 function main() {
     const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
